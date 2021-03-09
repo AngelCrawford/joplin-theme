@@ -1,0 +1,33 @@
+.ace_heading {
+	font-weight: bold;
+}
+.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6 {
+  color: aqua;
+}
+
+.ace-twilight .ace_list, 
+.ace-twilight .ace_markup.ace_list, 
+.ace-twilight .ace_storage {
+  color: rgb(221, 221, 221) !important;
+}
+.ace-twilight .ace_support.ace_function { color: #aaa !important; }
+.ace-twilight .ace_variable { color: red !important; }
+
+.CodeMirror-sizer .CodeMirror-lines {
+  padding-bottom: 50px !important;
+}
+
+.cm-s-material-darker .cm-variable-3, .cm-s-material-darker .cm-type {
+  color: #EEFFFF !important;
+}
+
+.cm-s-material-darker .cm-string {
+  color: #23CD60 !important;
+}
+
+.cm-s-material-darker .cm-meta {
+  color: #23CD60 !important;
+}
+.cm-s-material-darker .cm-property {
+  color: #00A3A3 !important;
+}

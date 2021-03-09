@@ -1,0 +1,140 @@
+strong {
+  font-weight: bold;
+}
+strong::before {
+	content: "\f005";
+	font-family: "Font Awesome 5 Free" !important;
+	position: absolute;
+	margin-left: 0;
+	left: -26px;
+}
+li li strong::before {
+	left: -74px;
+}
+td strong {
+  padding-left: 20px
+}
+td strong::before {
+  left: 13px
+}
+
+mark {
+  background-color: transparent;
+  color: #c71616;
+  padding: 0;
+  font-weight: bold;
+}
+mark::before {
+	content: "\f128";
+	font-family: "Font Awesome 5 Free" !important;
+	position: absolute;
+	margin-left: 0;
+	left: -24px;
+}
+li li mark::before {
+	left: -72px;
+}
+td mark {
+  padding-left: 20px
+}
+td mark::before {
+  left: 15px
+}
+
+ins {
+  text-decoration: none;
+  color: #2178db;
+  font-weight: bold;
+}
+ins::before {
+	content: "\f783";
+	font-family: "Font Awesome 5 Free" !important;
+	position: absolute;
+	margin-left: 0;
+	left: -24px;
+}
+li li ins::before {
+	left: -72px;
+}
+td ins {
+  padding-left: 20px
+}
+td ins::before {
+  left: 15px
+}
+
+blockquote {
+  padding: 0;
+  margin: 0;
+  background: 0;
+  border: none;
+  color: #ffd900 !important;
+  opacity: 1;
+  font-weight: bold;
+  display: inline-block;
+}
+blockquote::before {
+	content: "\f0eb";
+	font-family: "Font Awesome 5 Free" !important;
+	position: absolute;
+	margin-left: 0;
+	left: -22px;
+}
+li li blockquote::before {
+	left: -70px;
+}
+td blockquote {
+  padding-left: 20px
+}
+td blockquote::before {
+  left: 17px
+}
+
+em {
+  text-decoration: none;
+  color: #d858d8 !important;
+  font-weight: bold;
+  font-style: normal;
+}
+em::before {
+	content: "\f02d";
+	font-family: "Font Awesome 5 Free" !important;
+	position: absolute;
+	margin-left: 0;
+	left: -24px;
+}
+li li em::before {
+	left: -72px;
+}
+td em {
+  padding-left: 20px
+}
+td em::before {
+  left: 15px
+}
+
+ul, ol {
+  padding-left: 25px;
+}
+ul li, ol li {
+  padding: 0 0 0 0;
+  margin: 0;
+}
+ul li::before, ol li::before {
+  display: none;
+}
+ul li li, ol li li, 
+ul li li li, ol li li li {
+  padding: 0 0 0 1.5em;
+}
+
+ul li.md-checkbox {
+  padding: 0;
+}
+ul li li.md-checkbox {
+  padding: 0 0 0 1.5em;
+}
+	
+.resource-icon {
+  display: none;
+}
