@@ -17,8 +17,42 @@ It's build on top of the integrated "Dark" Theme included in Joplin.
 2. Paste the content from this repository, don't forget to install the "Font Awesome Free" font to your local PC
 3. At the end of every note, where you want to use this extra style, add this line `<style>@import url(C:/Users/<username>/.config/joplin-desktop/userstyle-bujo.css);</style>`
 
-# More Screenshots
+## Message usage
 ![Screenshot Joplin](/assets/screenshot3.png)
+
+To use this message boxes, copy this to your note in Joplin.
+
+```html
+<b-notice>
+	<b>NOTICE:</b> This is a <b-notice></b-notice> box
+</b-notice>
+
+<b-help>
+	<b>HELP:</b> This is a <b-help></b-help> box
+</b-help>
+
+<b-success>
+	<b>SUCCESS:</b> This is a <b-success></b-success> box
+</b-success>
+
+<b-warning>
+	<b>WARNING:</b> This is a <b-warning></b-warning> box
+</b-warning>
+
+<b-error>
+	<b>ERROR:</b> This is a <b-error></b-error> box
+</b-error>
+
+<b-construction>
+	<b>CONSTRUCTION:</b> This is a <b-construction></b-construction> box.
+</b-construction>
+```
+
+I even created a [template](https://joplinapp.org/#note-templates) for every message in my Joplin, for a faster use! 
+
+You can find your Template folder here `C:\Users\<username>\.config\joplin-desktop\templates` under Windows.
+
+Copy all the files under `templates` folder from here to your local templates folder. 
 
 # Question
 I found the design for the headers in another project, but forgot to save the source. If someone knows from whom this was, I would be really glad to add a source link 😊
