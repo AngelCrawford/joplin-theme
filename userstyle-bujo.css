@@ -125,14 +125,14 @@ ul li::before, ol li::before {
 }
 ul li li, ol li li, 
 ul li li li, ol li li li {
-  padding: 0 0 0 1.5em;
+  padding: 0 0 0 1.2em;
 }
 
 ul li.md-checkbox {
   padding: 0;
 }
 ul li li.md-checkbox {
-  padding: 0 0 0 1.5em;
+  padding: 0 0 0 1.2em;
 }
 	
 .resource-icon {
