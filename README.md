@@ -19,3 +19,6 @@ It's build on top of the integrated "Dark" Theme included in Joplin.
 
 # More Screenshots
 ![Screenshot Joplin](/assets/screenshot3.png)
+
+# Question
+I found the design for the headers in another project, but forgot to save the source. If someone knows from whom this was, I would be really glad to add a source link 😊
