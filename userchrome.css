@@ -1,7 +1,12 @@
 .ace_heading {
 	font-weight: bold;
 }
-.cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6 {
+.CodeMirror .cm-header.cm-header-1, 
+.CodeMirror .cm-header.cm-header-2, 
+.CodeMirror .cm-header.cm-header-3, 
+.CodeMirror .cm-header.cm-header-4, 
+.CodeMirror .cm-header.cm-header-5, 
+.CodeMirror .cm-header.cm-header-6 {
   color: aqua;
 }
 
@@ -15,6 +20,7 @@
 
 .CodeMirror-sizer .CodeMirror-lines {
   padding-bottom: 50px !important;
+  padding-left: 1em;
 }
 
 .cm-s-material-darker .cm-variable-3, .cm-s-material-darker .cm-type {
