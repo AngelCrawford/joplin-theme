@@ -19,8 +19,14 @@
 .ace-twilight .ace_variable { color: red !important; }
 
 .CodeMirror-sizer .CodeMirror-lines {
-  padding-bottom: 50px !important;
-  padding-left: 1em;
+  /* padding-bottom: 50px !important; */
+  /* padding-left: 1em; */
+}
+
+body .CodeMirror-sizer {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  max-width: 750px !important;
 }
 
 .cm-s-material-darker .cm-variable-3, .cm-s-material-darker .cm-type {
