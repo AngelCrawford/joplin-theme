@@ -43,12 +43,12 @@ body {
   background-color: var(--dark-grey);
   padding-top: 20px;
   padding-bottom: 20px;
-  font-family: Ubuntu;
+  font-family: "Roboto", Avenir, Arial, sans-serif !important;
 }
 
-#rendered-md {
+/* #rendered-md {
   max-width: 750px !important;
-}
+} */
 
 mark {
   background: var(--aqua);
