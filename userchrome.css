@@ -43,3 +43,36 @@
 .cm-s-material-darker .cm-property {
   color: #00A3A3 !important;
 }
+
+
+.cm-tabcolor-row {
+	color: var(--joplin-color) !important;
+}
+.cm-tabcolor-header {
+	font-weight: bolder;
+	color: var(--joplin-color) !important;
+}
+.cm-tabcolor-col1, .cm-tabcolor-col7 {
+	background-color: transparent !important;
+	color: #00A3A3 !important;
+}
+.cm-tabcolor-col2, .cm-tabcolor-col8 {
+	background-color: transparent !important;
+	color: #F459F4 !important; 
+}
+.cm-tabcolor-col3, .cm-tabcolor-col9 {
+	background-color: transparent !important;
+	color: #23CD60 !important;
+}
+.cm-tabcolor-col4, .cm-tabcolor-col10 {
+	background-color: transparent !important;
+	color: red !important;
+}
+.cm-tabcolor-col5, .cm-tabcolor-col11 {
+	background-color: transparent !important;
+	color: #cf7506 !important;
+}
+.cm-tabcolor-col6, .cm-tabcolor-col12 {
+	background-color: transparent !important;
+	color: #3a79f7 !important;
+}
