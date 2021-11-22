@@ -375,3 +375,10 @@ li.md-checkbox [type="checkbox"]:checked + label:after {
   opacity: 1;
   transform: scale(1);
 }
+
+h1 span.copy-anchor-icon, h2 span.copy-anchor-icon, h3 span.copy-anchor-icon {
+	visibility: hidden;
+}
+h1:hover span.copy-anchor-icon, h2:hover span.copy-anchor-icon, h3:hover span.copy-anchor-icon {
+	visibility: visible;
+}
