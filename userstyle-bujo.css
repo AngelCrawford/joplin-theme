@@ -1,15 +1,16 @@
+/* Green Star */
 strong {
   font-weight: bold;
 }
 strong::before {
-	content: "\f005";
-	font-family: "Font Awesome 5 Free" !important;
-	position: absolute;
-	margin-left: 0;
-	left: -26px;
+  content: "\f005";
+  font-family: "Font Awesome 5 Free" !important;
+  position: absolute;
+  margin-left: 0;
+  left: -26px;
 }
 li li strong::before {
-	left: -74px;
+  left: -70px;
 }
 td strong {
   padding-left: 20px
@@ -18,6 +19,11 @@ td strong::before {
   left: 13px
 }
 
+li:not(.md-checkbox) strong::before {
+  left: 8px;
+}
+
+/* Red Questionmark */
 mark {
   background-color: transparent;
   color: #c71616;
@@ -25,14 +31,14 @@ mark {
   font-weight: bold;
 }
 mark::before {
-	content: "\f128";
-	font-family: "Font Awesome 5 Free" !important;
-	position: absolute;
-	margin-left: 0;
-	left: -24px;
+  content: "\f128";
+  font-family: "Font Awesome 5 Free" !important;
+  position: absolute;
+  margin-left: 0;
+  left: -24px;
 }
 li li mark::before {
-	left: -72px;
+ left: -68px;
 }
 td mark {
   padding-left: 20px
@@ -41,20 +47,25 @@ td mark::before {
   left: 15px
 }
 
+li:not(.md-checkbox) mark::before {
+ left: 10px;
+}
+
+/* Blue Calendar */
 ins {
   text-decoration: none;
   color: #2178db;
   font-weight: bold;
 }
 ins::before {
-	content: "\f783";
-	font-family: "Font Awesome 5 Free" !important;
-	position: absolute;
-	margin-left: 0;
-	left: -24px;
+  content: "\f783";
+  font-family: "Font Awesome 5 Free" !important;
+  position: absolute;
+  margin-left: 0;
+  left: -24px;
 }
 li li ins::before {
-	left: -72px;
+  left: -68px;
 }
 td ins {
   padding-left: 20px
@@ -63,7 +74,13 @@ td ins::before {
   left: 15px
 }
 
-blockquote {
+li:not(.md-checkbox) ins::before {
+  left: 11px;
+}
+
+/* Yellow Idea */
+blockquote, 
+sub {
   padding: 0;
   margin: 0;
   background: 0;
@@ -72,24 +89,36 @@ blockquote {
   opacity: 1;
   font-weight: bold;
   display: inline-block;
+  font-size: unset;
+  vertical-align: unset;
 }
-blockquote::before {
-	content: "\f0eb";
-	font-family: "Font Awesome 5 Free" !important;
-	position: absolute;
-	margin-left: 0;
-	left: -22px;
+blockquote::before,
+sub::before {
+  content: "\f0eb";
+  font-family: "Font Awesome 5 Free" !important;
+  position: absolute;
+  margin-left: 0;
+  left: -22px;
 }
-li li blockquote::before {
-	left: -70px;
+li li blockquote::before,
+li li sub::before {
+  left: -66px;
 }
-td blockquote {
+td blockquote,
+td sub {
   padding-left: 20px
 }
-td blockquote::before {
+td blockquote::before,
+td sub::before {
   left: 17px
 }
 
+li:not(.md-checkbox) blockquote::before,
+li:not(.md-checkbox) sub::before {
+  left: 12px;
+}
+
+/* Pink Book */
 em {
   text-decoration: none;
   color: #d858d8 !important;
@@ -97,14 +126,14 @@ em {
   font-style: normal;
 }
 em::before {
-	content: "\f02d";
-	font-family: "Font Awesome 5 Free" !important;
-	position: absolute;
-	margin-left: 0;
-	left: -24px;
+  content: "\f02d";
+  font-family: "Font Awesome 5 Free" !important;
+  position: absolute;
+  margin-left: 0;
+  left: -24px;
 }
 li li em::before {
-	left: -72px;
+  left: -68px;
 }
 td em {
   padding-left: 20px
@@ -113,6 +142,11 @@ td em::before {
   left: 15px
 }
 
+li:not(.md-checkbox) em::before {
+  left: 10px;
+}
+
+/* Lists general */
 ul, ol {
   padding-left: 25px;
 }
@@ -120,6 +154,12 @@ ul li, ol li {
   padding: 0 0 0 0;
   margin: 0;
 }
+
+ul li:not(.md-checkbox)::before {
+  display: block !important;
+  padding-left:  0.37em;
+}
+
 ul li::before, ol li::before {
   display: none;
 }
