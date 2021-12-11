@@ -311,6 +311,9 @@ tbody td:hover:before {
   z-index: -1;
 }
 
+table tr td > ul:last-of-type {
+  margin-bottom: 0em;
+}
 
 /* // MARK: Checkboxes */
 
