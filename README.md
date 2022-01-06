@@ -56,5 +56,13 @@ You can find your Template folder here `C:\Users\<username>\.config\joplin-deskt
 
 ![Template Messages](/assets/template_messages.png)
 
+# Used Plugins
+I use the following Plugins which are already designed by me:
+* [Copy Anchor Link](https://github.com/hieuthi/joplin-plugin-copy-anchor-link)
+* [Markdown Table: Colorize](https://github.com/hieuthi/joplin-plugin-markdown-table-colorize)
+* [Note Tabs](https://github.com/benji300/joplin-note-tabs)
+* [Outline](https://github.com/cqroot/joplin-outline)
+* [Templates](https://github.com/joplin/plugin-templates)
+
 # Question
 I found the design for the headers in another project, but forgot to save the source. If someone knows from whom this was, I would be really glad to add a source link 😊
