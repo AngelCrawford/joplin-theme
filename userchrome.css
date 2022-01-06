@@ -48,7 +48,7 @@ div.sidebar .list-item-container:hover {
   background: #4E4E4E !important;
 }
 
-div.sidebar .list-item-container a.list-item > span:not(.title) {
+div.sidebar .list-item-container a.list-item > span:not(.title):not(.tag-label) {
   font-size: 15px !important;
   width: 25px;
   text-align: center;
