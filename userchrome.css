@@ -1,5 +1,3 @@
-/* // MARK: General */
-
 :root {
   --white: #e9edf0;
   
@@ -41,6 +39,52 @@
 
 div.sidebar {
   background-color: #2E3138 !important;
+}
+
+div.sidebar .list-item-container.selected {
+  background: #616161;
+}
+div.sidebar .list-item-container:hover {
+  background: #4E4E4E !important;
+}
+
+div.sidebar .list-item-container a.list-item > span:not(.title) {
+  font-size: 15px !important;
+  width: 25px;
+  text-align: center;
+}
+
+div.sidebar button {
+  font-size: 13px;
+}
+div.sidebar button:hover {
+  background: #4E4E4E !important;
+}
+div.sidebar button span.icon-sync {
+  font-size: 15px;
+}
+
+div.rli-noteList button.new-todo-button,
+div.rli-noteList button.new-note-button {
+  background-color: var(--white);
+  opacity: .5;
+}
+div.rli-noteList button.sort-order-reverse-button span,
+div.rli-noteList span.user_updated_time,
+div.rli-noteList span.icon-search {
+  color: var(--white);
+  opacity: .5;
+}
+
+div.note-list .list-item-container,
+div.note-list > div:last-of-type {
+  height: 30px !important;
+}
+div.note-list .list-item-container::before {
+  border: none;
+}
+div.note-list .list-item-container > a {
+  font-size: 13px !important;
 }
 
 .ace_heading {
