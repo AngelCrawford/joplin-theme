@@ -39,6 +39,10 @@
   --orange-dark: #E7AE1D;
 }
 
+div.sidebar {
+  background-color: #2E3138 !important;
+}
+
 .ace_heading {
   font-weight: bold;
 }
