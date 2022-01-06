@@ -42,6 +42,8 @@
 
 body {
   background-color: var(--dark-grey);
+  /* padding-top: 4px;
+  padding-bottom: 20px; */
   font-family: "Roboto", Avenir, Arial, sans-serif !important;
 }
 
