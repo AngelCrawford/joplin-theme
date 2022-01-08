@@ -68,7 +68,7 @@ I use the following Plugins which are already designed by me:
 If you want to use my Outline Plugin style from the images, then add the following CSS line to Tools > Options > Outline > "Show Advanced Settings" > "User Style".
 
 ```css
-.outline-content {background:#2E3138; padding:5px 0;} .toc-item-link {padding:0 0 0 36px !important; line-height:16px; height:30px; font-weight:normal; text-decoration:none; font-size:13px; vertical-align:middle; display:flex !important; align-items:center; text-indent:-20px; padding-left:36px;} .toc-item-link:hover {font-weight:normal; text-decoration:none; background:#4E4E4E; cursor:default;} a#header {color:#ffffff; height:30px; line-height:30px; padding:0 0 0 6px;} a#header::before {content:"\e917"; font-family:"icomoon" !important; font-size:18px; color:#ffffff; margin:0 8px 0 0; font-weight:300; top:3px; position:relative;}
+.outline-content {background:#2E3138; padding:5px 0 05px 36px;} .toc-item-link {line-height:16px; height:30px; font-weight:normal; text-decoration:none; font-size:13px; vertical-align:middle; display:flex !important; align-items:center; text-indent:-20px; padding-left:36px;} .toc-item-link:hover {font-weight:normal; text-decoration:none; background:#4E4E4E; cursor:default;} a#header {margin-left: -36px; color:#ffffff; height:30px; line-height:30px; padding:0 0 0 6px;} a#header::before {content:"\e917"; font-family:"icomoon" !important; font-size:18px; color:#ffffff; margin:0 8px 0 0; font-weight:300; top:3px; position:relative;}
 ```
 
 # Question
