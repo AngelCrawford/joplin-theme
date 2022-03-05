@@ -178,3 +178,9 @@ ul li li.md-checkbox {
 .resource-icon {
   display: none;
 }
+
+/* Calendar support */
+.calendar tr td:first-of-type,
+.calendar tr th:first-of-type { 
+  background: rgba(255, 255, 255, .3);
+}
