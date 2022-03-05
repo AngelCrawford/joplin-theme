@@ -76,9 +76,6 @@ div.rli-noteList span.icon-search {
   opacity: .5;
 }
 
-div.note-list .list-item-container {
-  height: 30px !important;
-}
 div.note-list .list-item-container::before {
   border: none;
 }
