@@ -178,16 +178,3 @@ ul li li.md-checkbox {
 .resource-icon {
   display: none;
 }
-
-/* Calendar Table */
-.calendar tr:first-of-type {
-  background-color: rgba(80,255,250,.3);
-}
-.calendar tr:first-of-type td {
-  color:#212121; 
-  font-weight:bold;
-}
-.calendar tr td:first-of-type,
-.calendar tr th:first-of-type {
-  background:rgba(255,255,255,.3);
-}
