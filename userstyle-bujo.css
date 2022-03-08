@@ -184,3 +184,8 @@ ul li li.md-checkbox {
 .calendar tr th:first-of-type { 
   background: rgba(255, 255, 255, .3);
 }
+
+/* Remove [TOC] for Desktop, only use on Mobile  */
+nav.table-of-contents {
+  display: none;
+}
