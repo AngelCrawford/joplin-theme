@@ -148,44 +148,30 @@ h4, h5, h6 {
 /* // MARK: Listen */
 
 ol {
-  margin: 0 0 1.5em;
+  margin: 0 0 0 1.5em;
   padding: 0;
-  counter-reset: item;
 }
 ol li {
   margin: 0;
-  padding: 0 0 0 1.5em;
-  list-style-type: none;
-  counter-increment: item;
+  padding: 0 0 0 .1em;
 }
-ol li:before {
+ol li::marker {
   color: var(--aqua-darker);
-  content: counter(item) ".";
-  display: inline-block;
-  float: left;
   font-weight: bold;
-  padding-right: 0.5em;
-  width: 1em;
 }
 
 ul {
-  margin: 0 0 1.5em;
+  margin: 0 0 0 .9em;
   padding: 0;
-  list-style: none;
 }
 ul li {
   margin: 0;
-  padding: 0 0 0 1.5em;
-  list-style-type: none;
+  padding: 0 0 0 .7em;
 }
-ul li::before {
+ul li::marker {
   color: var(--aqua-darker);
   content: "\2022";
-  display: inline-block;
-  float: left;
   font-weight: bold;
-  padding-right: 0.3em;
-  width: 1em;
 }
 
 /* // MARK: Notifications */
