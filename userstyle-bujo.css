@@ -148,10 +148,11 @@ li:not(.md-checkbox) em::before {
 
 /* Lists general */
 ul, ol {
-  padding-left: 25px;
+  padding-left: 15px;
+  margin-bottom: 1.5em;
 }
 ul li, ol li {
-  padding: 0 0 0 0;
+  padding: 0;
   margin: 0;
 }
 
@@ -160,19 +161,19 @@ ul li:not(.md-checkbox)::before {
 	padding-left:  0.37em;
 }
 
-ul li::before, ol li::before {
-  display: none;
+ul li::marker, ol li::marker {
+  content: "";
 }
 ul li li, ol li li, 
 ul li li li, ol li li li {
-  padding: 0 0 0 1.2em;
+  padding: 0;
 }
 
 ul li.md-checkbox {
   padding: 0;
 }
 ul li li.md-checkbox {
-  padding: 0 0 0 1.2em;
+  padding: 0;
 }
 	
 .resource-icon {
@@ -183,9 +184,4 @@ ul li li.md-checkbox {
 .calendar tr td:first-of-type,
 .calendar tr th:first-of-type { 
   background: rgba(255, 255, 255, .3);
-}
-
-/* Remove [TOC] for Desktop, only use on Mobile  */
-nav.table-of-contents {
-  display: none;
 }
