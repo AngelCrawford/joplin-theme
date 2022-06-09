@@ -98,6 +98,10 @@ div.note-list .list-item-container > a {
 .CodeMirror .cm-strong {
   color: var(--aqua-light) !important;
 }
+.CodeMirror .cm-em,
+.CodeMirror .cm-em.cm-variable-3 {
+  color: var(--aqua-light) !important;
+}
 
 .ace-twilight .ace_list, 
 .ace-twilight .ace_markup.ace_list, 
