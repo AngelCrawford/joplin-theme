@@ -66,15 +66,15 @@ And same view will get change like below. You can create a template for the same
 **Syntax**
 
 > <span>```</span>mermaid
-> %%{init: { "theme": "dark" } }%%
-> graph TD
-> direction BT
-> User --> |Insert| id1[(OLTP)]
-> User --> |Update| id1[(OLTP)]
-> User --> |Delete| id1[(OLTP)]
-> User --> |Select| id2[(OLAP)]
-> id1 -.-> Normalization,-Reduce_Redundancy
-> id2 -.-> De-Normalization
+> %%{init: { "theme": "dark" } }%% <br/>
+> graph TD <br/>
+> direction BT <br/>
+> User --> |Insert| id1[(OLTP)] <br/>
+> User --> |Update| id1[(OLTP)] <br/>
+> User --> |Delete| id1[(OLTP)] <br/>
+> User --> |Select| id2[(OLAP)] <br/>
+> id1 -.-> Normalization,-Reduce_Redundancy <br/>
+> id2 -.-> De-Normalization <br/>
 >
 > <p>```</p>
 
