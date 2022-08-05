@@ -65,7 +65,7 @@ And same view will get change like below. You can create a template for the same
 
 **Syntax**
 
-> <span>```</span>mermaid
+> <span>```</span>mermaid <br/>
 > %%{init: { "theme": "dark" } }%% <br/>
 > graph TD <br/>
 > direction BT <br/>
