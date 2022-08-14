@@ -26,15 +26,25 @@ It's build on top of the integrated "Dark" Theme included in Joplin.
 To use this message boxes, copy this to your note in Joplin.
 
 ```html
-<b-notice> <b>NOTICE:</b> This is a <b-notice></b-notice> box </b-notice>
+<b-notice>
+  <b>NOTICE:</b> This is a <b-notice></b-notice> box
+</b-notice>
 
-<b-help> <b>HELP:</b> This is a <b-help></b-help> box </b-help>
+<b-help>
+  <b>HELP:</b> This is a <b-help></b-help> box
+</b-help>
 
-<b-success> <b>SUCCESS:</b> This is a <b-success></b-success> box </b-success>
+<b-success>
+  <b>SUCCESS:</b> This is a <b-success></b-success> box
+</b-success>
 
-<b-warning> <b>WARNING:</b> This is a <b-warning></b-warning> box </b-warning>
+<b-warning>
+  <b>WARNING:</b> This is a <b-warning></b-warning> box
+</b-warning>
 
-<b-error> <b>ERROR:</b> This is a <b-error></b-error> box </b-error>
+<b-error>
+  <b>ERROR:</b> This is a <b-error></b-error> box
+</b-error>
 
 <b-construction>
   <b>CONSTRUCTION:</b> This is a <b-construction></b-construction> box.
@@ -93,42 +103,7 @@ I use the following Plugins which are already designed by me:
 If you want to use my Outline Plugin style from the images, then add the following CSS line to Tools > Options > Outline > "Show Advanced Settings" > "User Style".
 
 ```css
-.outline-content {
-  background: #2e3138;
-  padding: 5px 0;
-}
-.toc-item-link {
-  height: 34px;
-  font-size: 13px;
-  display: flex !important;
-  align-items: center;
-  text-indent: -20px;
-}
-.toc-item-link > * {
-  padding: 0 0 0 12px;
-}
-.toc-item-link:hover {
-  font-weight: normal;
-  text-decoration: none;
-  background: #4e4e4e;
-  cursor: default;
-}
-a#header {
-  color: #ffffff;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 0 0 6px;
-}
-a#header::before {
-  content: "\e917";
-  font-family: "icomoon" !important;
-  font-size: 18px;
-  color: #ffffff;
-  margin: 0 8px 0 0;
-  font-weight: 300;
-  top: 3px;
-  position: relative;
-}
+.outline-content {background:#2E3138; padding:5px 0;} .toc-item-link {height:34px; font-size:13px; display:flex !important; align-items:center; text-indent:-20px;} .toc-item-link > * {padding:0 0 0 12px;} .toc-item-link:hover {font-weight:normal; text-decoration:none; background:#4E4E4E; cursor:default;} a#header {color:#ffffff; height:30px; line-height:30px; padding:0 0 0 6px;} a#header::before {content:"\e917"; font-family:"icomoon" !important; font-size:18px; color:#ffffff; margin:0 8px 0 0; font-weight:300; top:3px; position:relative;}
 ```
 
 # Question
