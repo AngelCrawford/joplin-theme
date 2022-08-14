@@ -392,3 +392,8 @@ h1 span.copy-anchor-icon, h2 span.copy-anchor-icon, h3 span.copy-anchor-icon {
 h1:hover span.copy-anchor-icon, h2:hover span.copy-anchor-icon, h3:hover span.copy-anchor-icon {
   visibility: visible;
 }
+
+/*Mermaid Dark mode*/
+.mermaid {
+  background-color: #282c34;
+}
