@@ -101,21 +101,21 @@ sup::before {
 	left: -22px;
 }
 li li blockquote::before,
-li li sub::before {
+li li sup::before {
 	left: -66px;
 }
 td blockquote,
-td sub {
+td sup {
   padding-left: 20px
 }
 td blockquote::before,
-td sub::before {
+td sup::before {
   left: 17px
 }
 
 li:not(.md-checkbox) blockquote::before,
-li:not(.md-checkbox) sub::before {
-	left: 12px;
+li:not(.md-checkbox) sup::before {
+  left: 12px;
 }
 
 /* Pink Book */
@@ -184,4 +184,9 @@ ul li li.md-checkbox {
 .calendar tr td:first-of-type,
 .calendar tr th:first-of-type { 
   background: rgba(255, 255, 255, .3);
+}
+
+/* Remove [TOC] for Desktop, only use on Mobile  */
+nav.table-of-contents {
+  display: none;
 }
