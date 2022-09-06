@@ -80,7 +80,7 @@ li:not(.md-checkbox) ins::before {
 
 /* Yellow Idea */
 blockquote, 
-sub {
+sup {
   padding: 0;
   margin: 0;
   background: 0;
@@ -93,7 +93,7 @@ sub {
   vertical-align: unset;
 }
 blockquote::before,
-sub::before {
+sup::before {
 	content: "\f0eb";
 	font-family: "Font Awesome 5 Free" !important;
 	position: absolute;
