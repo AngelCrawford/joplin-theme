@@ -24,27 +24,27 @@ To use this message boxes, copy this to your note in Joplin.
 
 ```html
 <b-notice>
-  <b>NOTICE:</b> This is a <b-notice></b-notice> box
+  <b>NOTICE:</b> This is a notice box
 </b-notice>
 
 <b-help>
-  <b>HELP:</b> This is a <b-help></b-help> box
+  <b>HELP:</b> This is a help box
 </b-help>
 
 <b-success>
-  <b>SUCCESS:</b> This is a <b-success></b-success> box
+  <b>SUCCESS:</b> This is a success box
 </b-success>
 
 <b-warning>
-  <b>WARNING:</b> This is a <b-warning></b-warning> box
+  <b>WARNING:</b> This is a warning box
 </b-warning>
 
 <b-error>
-  <b>ERROR:</b> This is a <b-error></b-error> box
+  <b>ERROR:</b> This is a error box
 </b-error>
 
 <b-construction>
-  <b>CONSTRUCTION:</b> This is a <b-construction></b-construction> box.
+  <b>CONSTRUCTION:</b> This is a construction box.
 </b-construction>
 ```
 
