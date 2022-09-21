@@ -7,7 +7,7 @@ It's build on top of the integrated "Dark" Theme included in Joplin.
 
 # Usage
 
-1. Install the "Font Awesome Free" Font to your PC. [Download here](https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself), open the Webfonts folder and install the three .ttf files inside
+1. Install the "Font Awesome Free" (Version 5) Font to your PC. [Download here](https://fontawesome.com/v5/docs/web/setup/host-font-awesome-yourself), open the Webfonts folder and install the three .ttf files inside
 2. Open your `userchrome.css` and paste the content from this repository. Do the same with `userstyle.css`
 3. Please be sure to use the integraded "Dark" Theme from Joplin. Have a look for this under `Tools > Options > Appearance`
 
@@ -51,42 +51,14 @@ To use this message boxes, copy this to your note in Joplin.
 </b-construction>
 ```
 
-I even created a [template](https://joplinapp.org/#note-templates) for every message in my Joplin.
-
-Copy all the files under the `templates` folder from here to your local templates folder. Then you can insert the messages as templates.
-
-You can find your Template folder here `C:\Users\<username>\.config\joplin-desktop\templates` under Windows.
-
-![Template Messages](/assets/template_messages.png)
-
-# Mermaid Dark modes
-
-Mermaid diagrams are look like this in dark mode.
-![Template Messages](/assets/SimpleDark.png)
-
+## Mermaid Dark mode usage
+![Nermaid Dark mode](/assets/mermaid-dark-mode.png)
 For better view add following line at the starting of mermaid syntax.
+(Thanks to https://github.com/KedarGhadge for this addition.)
 
 ```
 %%{init: { "theme": "dark" } }%%
 ```
-
-And same view will get change like below. You can create a template for the same line.
-![Template Messages](/assets/ReadyMadeDark.png)
-
-**Syntax**
-
-> <span>```</span>mermaid <br/>
-> %%{init: { "theme": "dark" } }%% <br/>
-> graph TD <br/>
-> direction BT <br/>
-> User --> |Insert| id1[(OLTP)] <br/>
-> User --> |Update| id1[(OLTP)] <br/>
-> User --> |Delete| id1[(OLTP)] <br/>
-> User --> |Select| id2[(OLAP)] <br/>
-> id1 -.-> Normalization,-Reduce_Redundancy <br/>
-> id2 -.-> De-Normalization <br/>
->
-> <p>```</p>
 
 # Used Plugins
 
@@ -98,12 +70,18 @@ I use the following Plugins which are already designed by me:
 - [Outline](https://github.com/cqroot/joplin-outline)
 - [Templates](https://github.com/joplin/plugin-templates)
 
-## Outline Plugin Design
+## Templates Plugin
+![Template Messages](/assets/template_messages.png)
+
+* Install the Plugin and restart Joplin
+* Create a new note, insert one message code from above to the note and add the `template`-tag
+
+## Outline Plugin
 
 If you want to use my Outline Plugin style from the images, then add the following CSS line to Tools > Options > Outline > "Show Advanced Settings" > "User Style".
 
 ```css
-.outline-content {background:#2E3138; padding:5px 0;} .toc-item-link {font-size:13px; display:flex !important; align-items:center; text-indent:-20px;} .toc-item-link > * {padding:0 0 0 12px;} .toc-item-link:hover {font-weight:normal; text-decoration:none; background:#4E4E4E; cursor:default;} a#header {color:#ffffff; height:30px; line-height:30px; padding:0 0 0 6px;} a#header::before {content:"\e917"; font-family:"icomoon" !important; font-size:18px; color:#ffffff; margin:0 8px 0 0; font-weight:300; top:3px; position:relative;}
+.outline-content {background:#2E3138; padding:5px 0;} .toc-item-link {height:30px, font-size:13px; display:flex !important; align-items:center; text-indent:-20px;} .toc-item-link > * {padding:0 0 0 12px;} .toc-item-link:hover {font-weight:normal; text-decoration:none; background:#4E4E4E; cursor:default;} a#header {color:#ffffff; height:30px; line-height:30px; padding:0 0 0 6px;} a#header::before {content:"\e917"; font-family:"icomoon" !important; font-size:18px; color:#ffffff; margin:0 8px 0 0; font-weight:300; top:3px; position:relative;}
 ```
 
 # Question
