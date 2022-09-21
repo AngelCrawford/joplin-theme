@@ -13,7 +13,7 @@ It's build on top of the integrated "Dark" Theme included in Joplin.
 
 ## Bullet Journal usage
 
-![Screenshot Joplin](/assets/screenshot2.png)
+![Screenshot Joplin](/assets/screenshot4.png)
 
 1. If you want to use my Bullet Journal style, create a new file in the same folder where the `userstyles.css` is lying. Name the file `userstyle-bujo.css`
 2. Paste the content from this repository, don't forget to install the "Font Awesome Free" font to your local PC
