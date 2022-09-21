@@ -1,3 +1,7 @@
+li.md-checkbox ::before {left: -23px;}
+li:not(.md-checkbox) > ::before {left: 15px;}
+li.md-checkbox li.md-checkbox ::before {left: -49px;}
+
 /* Green Star */
 strong {
   font-weight: bold;
@@ -6,12 +10,8 @@ strong::before {
   content: "\f005";
   font-family: "Font Awesome 5 Free" !important;
   position: absolute;
-  margin-left: 0;
-  left: -26px;
 }
-li li strong::before {
-  left: -70px;
-}
+
 td strong {
   padding-left: 20px
 }
@@ -19,9 +19,6 @@ td strong::before {
   left: 13px
 }
 
-li:not(.md-checkbox) strong::before {
-  left: 8px;
-}
 
 /* Red Questionmark */
 mark {
@@ -34,12 +31,8 @@ mark::before {
   content: "\f128";
   font-family: "Font Awesome 5 Free" !important;
   position: absolute;
-  margin-left: 0;
-  left: -24px;
 }
-li li mark::before {
-  left: -68px;
-}
+
 td mark {
   padding-left: 20px
 }
@@ -47,9 +40,6 @@ td mark::before {
   left: 15px
 }
 
-li:not(.md-checkbox) mark::before {
-  left: 10px;
-}
 
 /* Blue Calendar */
 ins {
@@ -61,12 +51,8 @@ ins::before {
   content: "\f783";
   font-family: "Font Awesome 5 Free" !important;
   position: absolute;
-  margin-left: 0;
-  left: -24px;
 }
-li li ins::before {
-  left: -68px;
-}
+
 td ins {
   padding-left: 20px
 }
@@ -74,9 +60,6 @@ td ins::before {
   left: 15px
 }
 
-li:not(.md-checkbox) ins::before {
-  left: 11px;
-}
 
 /* Yellow Idea */
 blockquote, 
@@ -97,13 +80,8 @@ sup::before {
   content: "\f0eb";
   font-family: "Font Awesome 5 Free" !important;
   position: absolute;
-  margin-left: 0;
-  left: -22px;
 }
-li li blockquote::before,
-li li sup::before {
-  left: -66px;
-}
+
 td blockquote,
 td sup {
   padding-left: 20px
@@ -113,10 +91,6 @@ td sup::before {
   left: 17px
 }
 
-li:not(.md-checkbox) blockquote::before,
-li:not(.md-checkbox) sup::before {
-  left: 12px;
-}
 
 /* Pink Book */
 em {
@@ -129,12 +103,8 @@ em::before {
   content: "\f02d";
   font-family: "Font Awesome 5 Free" !important;
   position: absolute;
-  margin-left: 0;
-  left: -24px;
 }
-li li em::before {
-  left: -68px;
-}
+
 td em {
   padding-left: 20px
 }
@@ -142,40 +112,54 @@ td em::before {
   left: 15px
 }
 
-li:not(.md-checkbox) em::before {
-  left: 10px;
-}
 
 /* Lists general */
 ul, ol {
   padding-left: 15px;
-  margin-bottom: 1.5em;
+  margin-bottom: 0;
 }
 ul li, ol li {
   padding: 0;
   margin: 0;
 }
 
-ul li:not(.md-checkbox)::before {
-  display: block !important;
-  padding-left:  0.37em;
+ul li:not(.md-checkbox) {
+  padding-left: 10px; 
+  margin-left: 12px;
+}
+ul li.md-checkbox {
+  padding-left: 0; 
+  margin-left: 0;
 }
 
-ul li::marker, ol li::marker {
+ul li:not(.md-checkbox)::marker { 
+  font-size: 20px;
+  margin: 0 50px;
+} 
+ul li.md-checkbox::marker {
   content: "";
 }
+
+ul li:not(.md-checkbox) ul {
+  padding-left: 0; 
+  margin-left: 2px;
+}
+ul li.md-checkbox ul {
+  padding-left: 12px;
+}
+
 ul li li, ol li li, 
 ul li li li, ol li li li {
   padding: 0;
 }
 
-ul li.md-checkbox {
-  padding: 0;
+ul li.md-checkbox li {
+  padding-left: 10px;
 }
-ul li li.md-checkbox {
-  padding: 0;
+ul li.md-checkbox li.md-checkbox {
+  padding-left: 0;
 }
-	
+
 .resource-icon {
   display: none;
 }
