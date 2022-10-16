@@ -42,15 +42,9 @@
 
 body {
   background-color: var(--dark-grey);
-  /* padding-top: 4px;
-  padding-bottom: 20px; */
   color: #e9edf0;
   font-family: "Roboto", Avenir, Arial, sans-serif !important;
 }
-
-/* #rendered-md {
-  max-width: 750px !important;
-} */
 
 mark {
   background: var(--aqua);
@@ -371,7 +365,7 @@ ul li[class*='checkbox']::before {
   display: none;
 }
 
-/* GALLERY */
+/* // MARK: Gallery */
 img.gallery {
   border: 1px solid #00A3A3; 
   margin-right: 10px;
@@ -384,7 +378,7 @@ img.gallery:hover {
   z-index: 999;
 }
 
-/* MARK: Copy Anchor (Headers) */
+/* // MARK: Copy Anchor (Headers) */
 
 h1 span.copy-anchor-icon, h2 span.copy-anchor-icon, h3 span.copy-anchor-icon {
   visibility: hidden;
@@ -396,7 +390,65 @@ h1:hover span.copy-anchor-icon, h2:hover span.copy-anchor-icon, h3:hover span.co
   display: none;
 }
 
-/*Mermaid Dark mode*/
+/* // MARK: Mermaid Dark mode */
 .mermaid {
   background-color: #282c34;
+}
+
+/* // MARK: Calendar */
+.calendar table {
+  border-spacing: 7px; 
+  border-collapse: separate; 
+  border: 0; 
+}
+
+.calendar tr td:first-of-type {
+  color:#fff; 
+  width: 20px; 
+  background:rgba(255, 255, 255, .3) !important;
+  border-left:0;
+}
+
+.calendar table tr th, 
+.calendar  table tr td {
+  border:0; 
+  border-radius:5px; 
+  padding:10px;
+}
+
+.calendar table tr td {
+  border-left: 30px solid #007c7c70; 
+  width: 45px; 
+  background: rgba(255,255,255,.1);
+}
+
+.calendar tr td em {
+  position: absolute; 
+  font-weight:bold; 
+  top:10px; 
+  left:-25px; 
+  color: #dddddd !important;
+  padding:0;
+} 
+.calendar tr td em::before {
+  display:none;
+}
+
+.calendar tr td strong {
+  position: absolute; 
+  font-weight:bold; 
+  top:10px; 
+  left:-25px; 
+  color: #1D2024 !important; 
+  padding:0;
+} 
+.calendar tr td strong::before {
+  display:none;
+}
+
+.calendar tr td i {
+  font-style:normal; 
+  position:absolute; 
+  right:10px; 
+  top: 8px;
 }
