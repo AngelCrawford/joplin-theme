@@ -2,21 +2,23 @@ li.md-checkbox ::before {left: -23px;}
 li:not(.md-checkbox) > ::before {left: 15px;}
 li.md-checkbox li.md-checkbox ::before {left: -49px;}
 
+strong::before,
+mark::before,
+ins::before,
+blockquote::before,
+sup::before,
+em::before {
+  font-family: "Font Awesome 6 Free Regular", "Font Awesome 6 Free Solid", "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+  position: absolute;
+}
+
 /* Green Star */
 strong {
   font-weight: bold;
 }
 strong::before {
   content: "\f005";
-  font-family: "Font Awesome 5 Free" !important;
-  position: absolute;
-}
-
-td strong {
-  padding-left: 20px
-}
-td strong::before {
-  left: 13px
+  margin-left: -3px;
 }
 
 
@@ -29,15 +31,6 @@ mark {
 }
 mark::before {
   content: "\f128";
-  font-family: "Font Awesome 5 Free" !important;
-  position: absolute;
-}
-
-td mark {
-  padding-left: 20px
-}
-td mark::before {
-  left: 15px
 }
 
 
@@ -48,16 +41,8 @@ ins {
   font-weight: bold;
 }
 ins::before {
-  content: "\f783";
-  font-family: "Font Awesome 5 Free" !important;
-  position: absolute;
-}
-
-td ins {
-  padding-left: 20px
-}
-td ins::before {
-  left: 15px
+  content: "\f133";
+  margin-left: -1px;
 }
 
 
@@ -78,21 +63,10 @@ sup {
 blockquote::before,
 sup::before {
   content: "\f0eb";
-  font-family: "Font Awesome 5 Free" !important;
-  position: absolute;
-}
-
-td blockquote,
-td sup {
-  padding-left: 20px
-}
-td blockquote::before,
-td sup::before {
-  left: 17px
 }
 
 
-/* Pink Book */
+/* Pink Pen */
 em {
   text-decoration: none;
   color: #d858d8 !important;
@@ -100,16 +74,7 @@ em {
   font-style: normal;
 }
 em::before {
-  content: "\f02d";
-  font-family: "Font Awesome 5 Free" !important;
-  position: absolute;
-}
-
-td em {
-  padding-left: 20px
-}
-td em::before {
-  left: 15px
+  content: "\f044";
 }
 
 
@@ -168,6 +133,16 @@ ul li.md-checkbox li.md-checkbox {
 .calendar tr td:first-of-type,
 .calendar tr th:first-of-type { 
   background: rgba(255, 255, 255, .3);
+}
+
+.calendar tr td a em, 
+.calendar tr td a strong {
+  color: #23CD60 !important;
+}
+
+/* Hide Calendar for Tablet and Mobile */
+@media all and (max-width: 450px) {
+  .calendar{display:none;}
 }
 
 /* Remove [TOC] for Desktop, only use on Mobile  */
