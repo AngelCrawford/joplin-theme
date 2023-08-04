@@ -416,14 +416,14 @@ h1:hover span.copy-anchor-icon, h2:hover span.copy-anchor-icon, h3:hover span.co
 }
 
 .calendar table tr th, 
-.calendar  table tr td {
+.calendar table tr td {
   border:0; 
   border-radius:5px; 
   padding:10px;
 }
 
 .calendar table tr td {
-  border-left: 30px solid #007c7c70; 
+  border-left: 30px solid #007c7c70;
   width: 45px; 
   background: rgba(255,255,255,.1);
 }
@@ -445,7 +445,7 @@ h1:hover span.copy-anchor-icon, h2:hover span.copy-anchor-icon, h3:hover span.co
   font-weight:bold; 
   top:10px; 
   left:-25px; 
-  color: #1D2024 !important; 
+  color: var(--black) !important;
   padding:0;
 } 
 .calendar tr td strong::before {
@@ -457,4 +457,31 @@ h1:hover span.copy-anchor-icon, h2:hover span.copy-anchor-icon, h3:hover span.co
   position:absolute; 
   right:10px; 
   top: 8px;
+}
+
+/* // MARK: Progress Bar */
+progress {
+  float: right;
+  border-radius: 13px;
+}
+progress::-webkit-progress-bar {
+  height: 13px;
+  background: var(--grey);
+  border-radius: 15px;
+  margin-top: 2px;
+}
+progress::-webkit-progress-value {
+  height: 13px;
+  background: var(--aqua-dark);
+  border-radius: 15px;
+}
+progress:after {
+  content: attr(value) '%';
+  position: absolute;
+  color: var(--black);
+  width: 50px;
+  text-align: center;
+  margin: -20px 0 0 50px;
+  font-size: 13px;
+  font-weight: 700;
 }
