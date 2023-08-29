@@ -18,20 +18,20 @@ It's build on top of the integrated "Dark" Theme included in Joplin.
 3. At the end of every note, where you want to use this extra style, add this line `<style>@import url(C:/Users/<username>/.config/joplin-desktop/userstyle-bujo.css);</style>`
 
 ### Bullet Journal Calendar usage
-![Screenshot Calendar](/assets/bujo-calendar.png)
+![Screenshot Calendar](/assets/bujo-calendar-2.png)
 
 Add this code to create a table calendar in you BuJo note.
 
 ```markdown
 <div class="calendar">
 
-| Mä. |  Mo. |  Tu. |  We. |  Th. |  Fr. |  Sa. |  Su. |
+| May |  Mo. |  Tu. |  We. |  Th. |  Fr. |  Sa. |  Su. |
 | --: | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| #40 | *3* <i>🛋️</i> | *4* | *5* | *6* | *7* <i>🩰</i> | *8* <i>🛒🩰</i> | *9* |
-| #41 | *10* <i>🎂</i> | *11* | *12* | *13* <i>🍣</i> | *14* | *15* <i>🥂🩰</i> | *16* |
+| #40 | *3* <i>💉</i> <m>May</m> | *4* | *5* <i>🚗</i> | *6* | *7* <i>🩰</i> | *8* <i>🛒🩰</i> | *9* |
+| [#41](:/Joplin_Internal_Link) | *10* <i>🎂</i> | *11* | *12* | *13* <i>🍣</i> | *14* | *15* <i>🥂🩰</i> | *16* |
 | #42 | *17* | *18* | *19* <i>🎂</i> | *20* | *21* <i>🍵</i> | *22* <i>🩰</i> | *23* |
-| #43 | *24* | *25* | *26* | *27* | *28* | *29* | *30* |
-| #44 | *31* <i>🛋️</i> | **1** <i>🌴🎷</i> | **2** <i>🌴</i> | **3** | **4** |  **5** | **6** |
+| #43 | *24* | *25*<i>🌴🎷</i> | *26* | *27* | *28* <d>🌴</d> | *29* <d>🌴</d> | *30* <d>🌴</d> |
+| #44 | *31* <i>🛋️</i> | **1** <m>April</m> | **2** <d>🌴</d> | **3** | **4** |  **5** | **6** |
 </div>
 ```
 
