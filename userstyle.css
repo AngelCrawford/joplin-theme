@@ -205,7 +205,7 @@ b-help::before {
   font-size: 1.5em;
   left: 30px;
   position: absolute;
-	font-family: "Font Awesome 6 Free Regular", "Font Awesome 6 Free Solid", "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+  font-family: "Font Awesome 6 Free Regular", "Font Awesome 6 Free Solid", "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
 }
 
 b-construction {
@@ -413,6 +413,7 @@ h1:hover span.copy-anchor-icon, h2:hover span.copy-anchor-icon, h3:hover span.co
   width: 20px; 
   background:rgba(255, 255, 255, .3) !important;
   border-left:0;
+  font-weight: bold;
 }
 
 .calendar table tr th, 
@@ -440,6 +441,11 @@ h1:hover span.copy-anchor-icon, h2:hover span.copy-anchor-icon, h3:hover span.co
   display:none;
 }
 
+.calendar tr td a em, 
+.calendar tr td a strong {
+  color: var(--green-dark) !important;
+}
+
 .calendar tr td strong {
   position: absolute; 
   font-weight:bold; 
@@ -452,11 +458,47 @@ h1:hover span.copy-anchor-icon, h2:hover span.copy-anchor-icon, h3:hover span.co
   display:none;
 }
 
+.calendar .resource-icon {
+  display: none;
+}
+
+/* [^1] => Add an Explanation next to an Icon */
+.calendar tr td sup {
+  font-size: 11px;
+}
+
+/* <i>[Emoji]</i> => Add an Icon */
 .calendar tr td i {
-  font-style:normal; 
-  position:absolute; 
-  right:10px; 
+  font-style: normal; 
+  position: absolute; 
+  right: 5px; 
   top: 8px;
+}
+
+/* <m>Januar</m> => Write the monthname */
+.calendar tr td m { 
+  font-weight: bold; 
+  letter-spacing: -1px;
+  position: absolute; 
+  right: 5px; 
+  bottom: -3px; 
+  color:#aaa;
+  font-size: 80%;
+}
+
+/* <d>[Emoji]</d> => Add an Icon next to the calendar day number */
+.calendar tr td d {
+  font-weight: bold; 
+  letter-spacing: -1px;
+  position: absolute; 
+  left: -10px; 
+  bottom: -3px; 
+  font-size: 80%;
+}
+
+/* Do not show the calendar on mobile */
+@media all and (max-width: 450px) {
+  .calendar { display:none; }
 }
 
 /* // MARK: Progress Bar */
