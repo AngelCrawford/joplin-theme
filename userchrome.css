@@ -79,6 +79,9 @@ div.rli-noteList span.icon-search {
 div.note-list .list-item-container::before {
   border: none;
 }
+div.note-list-item::before {
+  display: none;
+}
 div.note-list .list-item-container > a {
   font-size: 13px !important;
 }
